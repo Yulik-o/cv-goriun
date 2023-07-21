@@ -15,8 +15,16 @@ legend {
   text-align: center;
 }
 
-label,
-button {
+label {
   display: block;
   margin: 10px 0;
+}
+button {
+  margin-right: 15px;
+  border-radius: 5px;
+  border-color: rgb(129, 220, 190);
+  background-color: rgb(161, 219, 184);
+}
+input {
+  display: block;
 }
