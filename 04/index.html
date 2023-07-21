@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <section>
+      <form
+        action="https://jkorpela.fi/cgi-bin/echo.cgi"
+        method="GET"
+        target="_blank"
+      >
+        <fieldset class="fieldset">
+          <legend>Реєстрація</legend>
+          <label for="user-name">Повне ім'я</label>
+          <input
+            type="text"
+            name="user-name"
+            id="user-name"
+            placeholder="Максим Кондратюк"
+            required
+          />
+          <label for="user-email">Email</label>
+          <input
+            type="email"
+            name="user-email"
+            id="user-email"
+            required
+            placeholder="gloryforukraine@gmail.com"
+          />
+          <label for="user-password">Пароль</label>
+          <input
+            type="password"
+            name="user-password"
+            id="user-password"
+            required
+            min="5"
+            max="10"
+          />
+          <label for="user-password">Пароль ще раз</label>
+          <input
+            type="password"
+            name="user-password"
+            id="user-password"
+            required
+          />
+          <h4>Стать</h4>
+          <label for="user-gender-male">Чоловіча</label>
+          <input
+            type="radio"
+            id="user-gender-male"
+            name="user-gender"
+            value="male"
+            required
+            checked
+          />
+          <label for="user-gender-female">Жіноча</label>
+          <input
+            type="radio"
+            id="user-gender-femail"
+            name="user-gender"
+            value="female"
+            required
+          />
+          <label for="user-gender-broom">Віник</label>
+          <input
+            type="radio"
+            id="user-gender-broom"
+            name="user-gender"
+            value="broom"
+            required
+          />
+          <label for="user-age">Вік</label>
+          <input
+            type="number"
+            name="user-age"
+            id="user-age"
+            required
+            max="150"
+            min="15"
+          />
+          <label for="course">Course</label>
+          <select name="course" id="course" multiple required>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="js">JS</option>
+            <option value="react">React</option>
+          </select>
+          <label for="address">Повна адреса</label>
+          <textarea
+            name="address"
+            id="address"
+            required
+            maxlength="200"
+            rows="4"
+            cols="10"
+          />
+          <input
+            type="checkbox"
+            id="personal-info"
+            name="personal-info"
+            required
+          />
+          <label for="personal-info"
+            >Я погоджуюсь з обробкою персональних даних</label
+          >
+
+          <button type="reset">Очистити форму</button
+          ><button type="submit">Зареєструватися</button>
+        </fieldset>
+      </form>
+    </section>
+  </body>
+</html>
