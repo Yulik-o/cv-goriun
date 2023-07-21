@@ -91,14 +91,14 @@
             <option value="react">React</option>
           </select>
           <label for="address">Повна адреса</label>
-          <textarea
+          <!-- <textarea
             name="address"
             id="address"
             required
             maxlength="200"
             rows="4"
             cols="10"
-          />
+          /> -->
           <input
             type="checkbox"
             id="personal-info"
@@ -112,6 +112,87 @@
           <button type="reset">Очистити форму</button
           ><button type="submit">Зареєструватися</button>
         </fieldset>
+      </form>
+    </section>
+    <!-- Друга частина ДЗ: форма реєстрації на отримання громадянства України -->
+    <section class="second-form">
+      <h3>Реєстрація на отримання громадянства України</h3>
+      <form
+        action="https://jkorpela.fi/cgi-bin/echo.cgi"
+        method="get"
+        target="_blank"
+      >
+        <label for="user-name">Прізвище та ім'я</label>
+        <input type="text" name="user-name" id="user-name" required />
+        <label for="user-email">Email</label>
+        <input type="email" name="user-email" id="user-email" required />
+        <label for="user-password">Ввведіть пароль</label>
+        <input
+          type="password"
+          name="user-password"
+          id="user-password"
+          required
+        />
+        <h4>Ви палите?</h4>
+        <label for="smoking">Так</label>
+        <input type="radio" name="smoking" id="smoking" value="smoking" />
+        <label for="non-smoking">Ні</label>
+        <input
+          type="radio"
+          name="smoking"
+          id="non-smoking"
+          value="non-smoking"
+        />
+        <label for="seldom-smoking">Коли ніхто не бачить</label>
+        <input
+          type="radio"
+          name="smoking"
+          id="seldom-smoking"
+          value="seldom-smoking"
+        />
+        <h4>Якого кольору вам сняться сни?</h4>
+        <label for="pink">Pink</label>
+        <input type="color" name="pink" id="pink" required value="#FFC0CB" />
+        <label for="gray">Grey</label>
+        <input type="color" name="gray" id="gray" required value="#808080" />
+        <label for="donation">Коли ви в останнє донатили на ЗСУ?</label>
+        <input
+          type="date"
+          name="donation"
+          id="donation"
+          required
+          value="2023-07-22"
+        />
+        <label for="payment-screen">Прикріпіть скрін останнього донату</label>
+        <input type="file" name="payment-screen" id="payment-screen" required />
+        <label for="anthem">Чи часто ви співаєте гімн України вночі?</label>
+        <input
+          type="range"
+          name="anthem"
+          id="anthem"
+          required
+          min="0"
+          max="100"
+          value="90"
+        />
+
+        <input
+          type="checkbox"
+          name="agreement"
+          id="agreement"
+          required
+          checked
+        />
+        <label for="agreement"
+          >Я погоджуюсь з тим, що москаляку - на гілляку</label
+        >
+        <input
+          type="hidden"
+          name="registrationId"
+          id="registrationId"
+          value="34567"
+        />
+        <button type="submit">Зареєструватись</button>
       </form>
     </section>
   </body>
