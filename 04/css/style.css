@@ -28,3 +28,6 @@ button {
 input {
   display: block;
 }
+form {
+  padding: 20px;
+}
