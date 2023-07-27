@@ -1,0 +1,72 @@
+.container {
+  max-width: 534px;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+.shopping_header {
+  background-color: #4a4f56;
+  padding-top: 19px;
+  padding-bottom: 12px;
+}
+.main_heading {
+  color: #ff8984;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.header_content {
+  color: #ff8984;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 4px;
+}
+.shopping_list {
+  background-color: #3b3f45;
+}
+.main_text {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.joke_text {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.grey_text {
+  color: #9b96ac;
+}
+.label {
+  padding: 11px 0 13px 12px;
+  background-color: #88839e;
+  text-align: left;
+}
+.label:nth-child(even) {
+  background-color: #7a7593;
+}
+.button_section {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+.button {
+  color: #ff8984;
+  background-color: #4a4f56;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 12px 223px 12px 204px;
+}
