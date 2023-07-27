@@ -52,9 +52,32 @@
   padding: 11px 0 13px 12px;
   background-color: #88839e;
   text-align: left;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
 }
+
 .label:nth-child(even) {
   background-color: #7a7593;
+}
+.label:hover {
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  background-color: #625e77;
+}
+input[type="checkbox"] {
+  display: none;
+}
+.fake_checkbox {
+  width: 19px;
+  height: 19px;
+  display: inline-block;
+  background-color: #fff;
+}
+input[type="checkbox"]:checked + .fake_checkbox {
+  background-image: url(../img/Check.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .button_section {
   padding-top: 45px;
