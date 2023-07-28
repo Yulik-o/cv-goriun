@@ -87,6 +87,9 @@ p:not(:last-child) {
 }
 
 /* section skills */
+.skills_list {
+  font-size: 0;
+}
 
 .skills_heading {
   margin-bottom: 20px;
