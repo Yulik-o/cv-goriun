@@ -65,7 +65,7 @@
   border-bottom: 2px solid #fff;
   background-color: #625e77;
 }
-label::after {
+/* label::after {
   content: "";
   display: block;
   width: 0;
@@ -74,21 +74,25 @@ label::after {
   top: 50%;
   left: 25px;
   opacity: 0;
-}
+} */
 input[type="checkbox"] {
   display: none;
 }
-.fake_checkbox {
+
+.fake_checkbox::before {
+  content: "";
   width: 19px;
   height: 19px;
   display: inline-block;
+  margin-right: 16px;
   background-color: #fff;
 }
-input[type="checkbox"]:checked + .fake_checkbox {
+input[type="checkbox"]:checked + .fake_checkbox::before {
   background-image: url(../img/Check.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  /* display: inline-block; */
 }
 .button_section {
   padding-top: 45px;
