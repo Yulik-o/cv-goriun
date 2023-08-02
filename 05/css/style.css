@@ -60,7 +60,6 @@ h2 {
   background-color: #f6f6f6;
 }
 .section_heading {
-  padding-top: 100px;
   color: #070707;
   text-align: center;
   font-family: Open Sans;
@@ -155,12 +154,16 @@ p:not(:last-child) {
 }
 
 /* section portfolio */
+.portfolio:not(:last-child) {
+  margin-bottom: 70px;
+}
 .portfolio_heading {
   margin-bottom: 50px;
 }
+.portfolio_example {
+  margin-bottom: 40px;
+}
 .portfolio_description {
-  margin-top: 40px;
-  margin-bottom: 70px;
   text-decoration: underline;
 }
 
@@ -170,6 +173,8 @@ p:not(:last-child) {
   margin-bottom: 60px;
 }
 .footer_button {
+  border: 0;
+  outline: 0;
   border-radius: 22px;
   background-color: #070707;
   color: #fff;
