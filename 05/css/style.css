@@ -23,6 +23,9 @@
   line-height: normal;
   letter-spacing: 0.36px;
 }
+.nav_link:hover {
+  font-size: 22px;
+}
 .nav_link.nav_active {
   color: #070707;
 }
@@ -189,9 +192,17 @@ p:not(:last-child) {
   padding: 10px 16px;
   margin-bottom: 40px;
 }
+.footer_button:hover {
+  color: #070707;
+  background-color: #fff;
+  border: 2px solid #070707;
+}
 .social_item {
   display: inline-block;
   margin-bottom: 60px;
+}
+.social_item:hover {
+  opacity: 0.5;
 }
 .social_item:not(:last-child) {
   margin-right: 50px;
