@@ -1,0 +1,156 @@
+@font-face {
+  font-family: "Gotham";
+  src: url(../fonts/gotham/Gotham-Bold.otf),
+    url(../fonts/gotham/Gotham-Bold.ttf);
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+.main_text {
+  color: #2f281e;
+  font-family: Montserrat;
+  font-size: 16px;
+
+  font-weight: 400;
+  line-height: 28px;
+}
+
+/* Header */
+.header_wrapper,
+.nav_list,
+.login {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+}
+.header_wrapper {
+  padding-top: 17px;
+  padding-bottom: 17px;
+}
+
+.nav_list {
+  text-transform: capitalize;
+  gap: 20px;
+}
+.nav_link.active {
+  color: rgba(255, 153, 0, 1);
+}
+
+.login {
+  gap: 32px;
+}
+
+.login_button.button {
+  padding: 13px 26px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 600;
+}
+.login_button.grey {
+  color: #2f281e;
+  border: 1px solid #bcd0e5;
+  background-color: transparent;
+}
+.button {
+  padding-top: 13px;
+  padding-bottom: 13px;
+  border-radius: 4px;
+  background-color: #f90;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+}
+.section:not(:first-child) {
+  padding-top: 100px;
+}
+.section:nth-child(1) {
+  padding-top: 70px;
+}
+.section_heading {
+  font-family: Montserrat;
+  font-size: 36px;
+  font-weight: 700;
+  color: #2f281e;
+}
+.section_heading.about {
+  margin-bottom: 30px;
+}
+.adv_name {
+  color: #2f281e;
+  font-family: Montserrat;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+.adv_item {
+  text-align: left;
+}
+.adv_content {
+  color: #544837;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+}
+.adv_list {
+  display: flex;
+  gap: 40px;
+}
+.icon_wrapper {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  background: #7752be;
+  justify-content: center;
+  align-items: center;
+}
+.adv_item:nth-child(2) .icon_wrapper {
+  background-color: #fab005;
+}
+.adv_item:nth-child(3) .icon_wrapper {
+  background-color: #f03e3d;
+}
+.adv_item:nth-child(4) .icon_wrapper {
+  background-color: #4dadf7;
+}
+.fa-solid,
+.fa-regular {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+/* Section hero */
+.hero_content_wrapper {
+  max-width: 500px;
+  text-align: left;
+}
+.hero_flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero_heading {
+  color: #2f281e;
+  font-family: Montserrat;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 54px;
+  margin-bottom: 30px;
+}
+.hero_button {
+  margin-top: 20px;
+  padding: 13px 43.5px;
+}
+/* .hero_img_wrapper {
+  background-image: url("../img/hero_img.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+} */

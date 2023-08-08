@@ -89,7 +89,7 @@ input[type="checkbox"]:checked + .fake_checkbox::before {
   /* display: inline-block; */
 }
 input[type="checkbox"]:checked + .fake_checkbox,
-.pickles_joke {
+input[type="checkbox"]:checked + .fake_checkbox .pickles_joke {
   color: #9b96ac;
 }
 .pickles {
@@ -129,4 +129,5 @@ input[type="checkbox"]:checked + .pickles::after {
   padding: 12px 223px 12px 204px;
   box-shadow: 0;
   border: 0;
+  width: 100%;
 }
