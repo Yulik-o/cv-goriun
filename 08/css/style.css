@@ -3,6 +3,15 @@
   src: url(../fonts/gotham/Gotham-Bold.otf),
     url(../fonts/gotham/Gotham-Bold.ttf);
 }
+body {
+  background-color: rgba(255, 255, 255, 1);
+  color: #544837;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -75,6 +84,7 @@
   font-family: Montserrat;
   font-size: 36px;
   font-weight: 700;
+  line-height: normal;
   color: #2f281e;
 }
 .section_heading.about {
@@ -89,6 +99,7 @@
 }
 .adv_item {
   text-align: left;
+  padding-top: 19px;
 }
 .adv_content {
   color: #544837;
@@ -155,4 +166,14 @@
   background-size: auto 100%;
   width: 644px;
   height: 450px;
+}
+.advantage .button {
+  padding: 13px 40px;
+  margin-top: 70px;
+  margin-bottom: 74px;
+}
+.advantage {
+  background-image: url(../img/bg_advantages.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 124%;
 }
