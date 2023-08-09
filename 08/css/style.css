@@ -149,8 +149,10 @@
   margin-top: 20px;
   padding: 13px 43.5px;
 }
-/* .hero_img_wrapper {
+.hero_img_wrapper {
   background-image: url("../img/hero_img.svg");
   background-repeat: no-repeat;
-  background-size: cover;
-} */
+  background-size: auto 100%;
+  width: 644px;
+  height: 450px;
+}
