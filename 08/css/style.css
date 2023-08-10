@@ -230,3 +230,11 @@ body {
 .managers .main_text {
   width: 440px;
 }
+
+/* Section Marketers */
+.marketers_img_wrapper {
+  background-image: url("../img/bg_marketers.svg");
+  background-repeat: no-repeat;
+  height: 610px;
+  width: 562px;
+}
