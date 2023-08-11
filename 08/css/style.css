@@ -25,6 +25,10 @@ body {
   font-weight: 400;
   line-height: 28px;
 }
+button,
+a {
+  cursor: pointer;
+}
 
 /* Header */
 .header_wrapper,
@@ -237,4 +241,54 @@ body {
   background-repeat: no-repeat;
   height: 610px;
   width: 562px;
+}
+.marketers {
+  padding-bottom: 100px;
+}
+
+/* Footer */
+.footer {
+  padding-top: 70px;
+  border-top: 2px solid rgba(188, 208, 229, 0.5);
+  padding-bottom: 70px;
+}
+.footer_flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .nav_list {
+  display: block;
+  text-align: left;
+  font-weight: 500;
+  line-height: 26px;
+}
+.footer_input {
+  padding: 15px 118px 15px 10px;
+  border: 1px solid #bcd0e5;
+  border-radius: 4px;
+}
+input::placeholder {
+  color: #bcd0e5;
+}
+.footer_input {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.legal_staff,
+.footer_form {
+  text-align: left;
+}
+form h4 {
+  max-width: 280px;
+}
+form button {
+  display: block;
+  padding: 13px 40px;
+}
+.footer .nav_list {
+  margin-top: 30px;
+}
+.footer .nav_item:not(:last-child) {
+  margin-bottom: 15px;
 }
