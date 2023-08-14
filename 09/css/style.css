@@ -1,0 +1,157 @@
+body {
+  color: #fff;
+}
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  width: 100%;
+}
+.gallery_section {
+  padding-bottom: 120px;
+  /* padding-left: 135px;
+  padding-right: 135px; */
+}
+.gallery_section:nth-child(1) {
+  padding-top: 120px;
+}
+.gallery_heading {
+  color: #000;
+  text-align: center;
+  font-family: "Delius Unicase";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.8px;
+  padding-bottom: 80px;
+}
+.grid_item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  background: var(
+    --blure,
+    linear-gradient(
+      0deg,
+      #241f24 0%,
+      rgba(91, 91, 91, 0.45) 34.11%,
+      rgba(187, 186, 192, 0.26) 62.5%
+    )
+  );
+}
+.content_author {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  position: absolute;
+  display: inline-block;
+  bottom: 20px;
+  left: 20px;
+}
+.content_date {
+  color: #e0e0e0;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: absolute;
+  display: inline-block;
+  bottom: 20px;
+  right: 20px;
+}
+.like_box,
+.download_box {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 8px;
+  background: rgba(224, 224, 224, 0.5);
+  position: absolute;
+  opacity: 0;
+}
+.like_box {
+  top: 20px;
+  left: 20px;
+}
+.download_box {
+  top: 20px;
+  right: 20px;
+}
+
+/* .grid_item::after {
+  content: "";
+  display: block;
+  position: absolute;
+} */
+.grid_item {
+  position: relative;
+}
+.grid_item:hover:before {
+  opacity: 0;
+}
+.grid_item:hover .like_box,
+.grid_item:hover .download_box {
+  opacity: 1;
+}
+.like_box:hover,
+.download_box:hover {
+  background-color: #e0e0e0;
+}
+.grid_container {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat (3, 1fr);
+}
+.img {
+  border-radius: 20px;
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+.architect_1 {
+  grid-area: 1/1/2/2;
+}
+.architect_2 {
+  grid-area: 1/2/2/4;
+}
+.architect_3 {
+  grid-column: 1 / span 2;
+  grid-row: 2/3;
+}
+.architect_4 {
+  grid-area: 2/3/3/4;
+}
+.architect_5 {
+  grid-area: 3/1/4/2;
+}
+.architect_6 {
+  grid-area: 3/2/4/4;
+}
+
+/* .square {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  /* grid-area: 1/1/2/2;
+  grid-area: 1/1/span 1/span 1 */
+/* } */
+.landscape {
+  grid-column: span 2;
+}
+.square_big {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.vertical {
+  grid-row: span 2;
+}

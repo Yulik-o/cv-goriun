@@ -1,0 +1,68 @@
+@import "./_reset.scss";
+
+$accent-color: pink;
+header {
+  background-color: white;
+  .box {
+    background-color: pink;
+    ul {
+      background-color: green;
+    }
+  }
+}
+.header.fixed {
+  display: flex;
+}
+// better:  .header {
+//     &.fixed {
+//         display: flex;
+//     }
+.checkbox {
+  font: none;
+  + label {
+    width: 40px;
+    height: 40px;
+  }
+  &.active {
+    display: block;
+    + label {
+      display: none;
+    }
+    &:checked {
+      display: none;
+    }
+  }
+}
+
+.checkbox {
+  display: none;
+  &:not(:first-child) {
+    color: #000;
+  }
+}
+
+// створення міксину:
+@mixin text-styles($fz, $lh: normal, $fw: 400) {
+  font-size: $fz;
+  line-height: $lh;
+  font-weight: $fw;
+}
+// usage if mixin:
+.text {
+  @include text-styles(18px, 24px, 600);
+}
+button {
+  background-color: #fff;
+  color: red;
+  border: 2px solid blue;
+}
+.button_sign {
+  @extend button;
+  color: green;
+}
+.button_login {
+  @extend .button_login;
+  @extend .box;
+  color: orange;
+}
+// перебиваються ті стилі, батьки яких знаходяться каскаднішеЖ від ікстенд це не залежитьж
