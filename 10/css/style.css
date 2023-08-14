@@ -11,6 +11,8 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding-top: 70px;
+  padding-left: 120px;
+  padding-right: 120px;
 }
 
 .section.last {
@@ -26,6 +28,8 @@ body {
   margin: 0 auto;
   padding-top: 13px;
   padding-bottom: 13px;
+  padding-left: 120px;
+  padding-right: 120px;
 }
 .lang_button {
   font-family: "Tourney";
