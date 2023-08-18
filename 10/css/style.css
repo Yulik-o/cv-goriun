@@ -13,7 +13,6 @@ body {
 
   padding-left: 60px;
   padding-right: 30px;
-  px;
 }
 article {
   padding-top: 70px;
@@ -120,8 +119,7 @@ article {
   background-repeat: no-repeat;
   background-size: 760px 760px;
   background-position: top 120px left 870px;
-  background-attachment: fixed ;
-  
+  background-attachment: fixed;
 }
 .section.last {
   padding-bottom: 90px;
