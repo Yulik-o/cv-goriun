@@ -8,11 +8,11 @@ body {
   line-height: 48px;
 }
 .container {
-  max-width: 1300px;
+  max-width: 1200px;
   margin: 0 auto;
 
-  padding-left: 40px;
-  padding-right: 40px;
+  /* padding-left: 40px;
+  padding-right: 40px; */
 }
 article {
   padding-top: 70px;
@@ -27,6 +27,7 @@ article {
   width: 100%;
   padding-top: 13px;
   padding-bottom: 13px;
+  z-index: 1;
 
   /* padding-left: 120px;
   padding-right: 120px; */
@@ -36,7 +37,6 @@ article {
   left: 0;
   width: 100%;
   background-color: #fff;
-  pointer-events: none;
 }
 .lang_button {
   font-family: "Tourney";
@@ -49,6 +49,7 @@ article {
   border: none;
   margin-right: 50px;
   background-color: transparent;
+  padding: 0;
 }
 .nav_list {
   display: flex;
@@ -72,12 +73,10 @@ article {
   width: 238px;
   padding-right: 0;
 }
-main {
+.aside_flex {
   display: flex;
   gap: 30px;
   position: relative;
-  max-width: 1200px;
-  padding-left: 0;
 }
 
 /* Aside */
@@ -121,8 +120,9 @@ article {
   background-image: url("../img/bg-picture.svg");
   background-repeat: no-repeat;
   background-size: 760px 760px;
-  background-position: top 120px left 660px;
+  background-position: top 120px left 850px;
   background-attachment: fixed;
+  z-index: 3;
 }
 .section.last {
   padding-bottom: 90px;
@@ -188,8 +188,8 @@ p a {
   max-width: 1200px;
   margin: 0 auto;
   /* text-align: center; */
-  padding-left: 40px;
-  padding-right: 40px;
+  /* padding-left: 40px;
+  padding-right: 40px; */
 }
 .users_heading {
   color: #000;
@@ -201,7 +201,8 @@ p a {
   letter-spacing: 1.44px;
   padding-top: 150px;
   position: relative;
-  padding-left: 240px;
+  padding-left: 120px;
+
   padding-bottom: 40px;
 }
 .users_heading::before {
@@ -210,7 +211,8 @@ p a {
   width: 100px;
   height: 8px;
   background: #000;
-  left: 120px;
+  left: 0;
+
   top: 170px;
 }
 .users_list {
@@ -223,7 +225,7 @@ p a {
   margin-bottom: 70px;
 }
 .users_item {
-  width: 250px;
+  width: 270px;
   height: 180px;
   /* padding-left: 30px;
   padding-right: 30px; */
@@ -235,13 +237,14 @@ p a {
   transition: all 0.3s ease;
 }
 .users_item img {
-  width: 200px;
+  width: 270px;
+  box-sizing: border-box;
   padding-left: 30px;
   padding-right: 30px;
 }
-.users_item:hover {
-  transform: rotateX(-180deg);
-}
+/* .users_item:hover {
+  transform: rotateX(180deg);
+} */
 .img_wrapper {
   height: 100%;
   width: 100%;
