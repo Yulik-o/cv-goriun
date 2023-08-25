@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <section class="main_section">
+      <div class="forms_flex">
+        <div class="forms_wrapper">
+          <h2 class="form_heading">Create an Account</h2>
+          <form action="" class="account input_flex">
+            <div class="input_wrapper">
+              <label for="account_name" class="label">First Name</label>
+              <input
+                type="text"
+                class="input"
+                name="account_name"
+                id="account_name"
+                required
+              />
+            </div>
+            <div class="input_wrapper">
+              <label for="account_last_name" class="label">Last Name</label>
+              <input
+                type="text"
+                class="input"
+                name="account_last_name"
+                id="account_last_name"
+                required
+              />
+            </div>
+            <div class="input_wrapper">
+              <label for="account_email" class="label">E-mail</label>
+              <input
+                type="email"
+                class="input landscape no_margin"
+                name="account_email"
+                id="account_email"
+                required
+              />
+              <p class="comments">
+                We'll never share your email with anyone else.
+              </p>
+            </div>
+            <div class="input_wrapper radio">
+              
+              <input
+                type="radio"
+                class="radio_input"
+                name="gender"
+                value="Male"
+                id="male"
+                
+                checked
+              /><label for="male" class="label label_file">Male</label>
+
+              <input
+                type="radio"
+                name="gender"
+                value="Female"
+                class="radio_input"
+                id="female"
+
+              /><label for="female" class="label label_file">Female</label>
+            </div>
+            <div class="input_wrapper select_wrapper">
+              <label for="account_country" class="label">Country</label>
+              <select
+                name="account_country"
+                id="account_country"
+                class="select"
+                
+              >
+                <option value=" "  selected hidden disabled>&nbsp Select</option>
+                <option value="China">&nbsp China</option>
+                <option value="Ukraine">&nbsp Ukraine</option>
+                <option value="Peru"> &nbsp Peru</option>
+              </select>
+            </div>
+            <div class="input_wrapper">
+              <label for="account_city" class="label">City</label>
+              <input
+                type="text"
+                class="input"
+                name="account_city"
+                id="account_city"
+                required
+              />
+            </div>
+            <div class="line">
+              <button type="submit" class="button">Sign Up</button>
+              <p class="comments confirmation">
+                By clicking the 'Sign Up' button, you confirm that you accept
+                our
+                <a href="#">Terms of Use</a>
+                and <a href="#">Privacy Policy</a>.
+              </p>
+            </div>
+            <div class="login_proposal">
+              <p class="comments">Have an account?</p>
+              <a href="#" class="login_link">Log In</a>
+            </div>
+          </form>
+        </div>
+
+        <!-- Profile page -->
+        <div class="forms_wrapper">
+          <h2 class="form_heading">Profile</h2>
+          <form action="" class="profile input_flex">
+            <div class="input_wrapper photo_instruction_wrapper">
+              <div class="photo_wrapper">
+                <img src="./img/📷 user_photo.jpg" alt="user photo" class="user_photo"/>
+              </div>
+              <div class="add_delete_photo_wrapper">
+                <div class="insert_wrapper">
+                  <button class="camera_button" type="button"><img src="./img/camera.svg" alt="camera icon"></button>
+                <label class="fake_file">
+                 <input
+                  type="file"
+                  class="input camera_input no_margin"
+                  name="account_last_name"
+                  id="account_last_name"
+                  required
+                  no_margin
+                /></label>
+                <p class="delete_description comments">
+                  Up to 1 MB (300x300 px)
+                </p></div>
+                <div class="delete_wrapper">
+                <button type="button" class="delete_button">
+                  <img src="./img/trash.svg" alt="trash basket" />
+                </button>
+                </div></div>
+              </div>
+            
+
+            <div class="input_wrapper">
+              <label for="profile_name" class="label">Name</label>
+              <input
+                type="text"
+                class="input"
+                name="profile_name"
+                id="profile_name"
+                required
+              />
+            </div>
+            <div class="input_wrapper">
+              <label for="profile_email" class="label">E-mail</label>
+              <input
+                type="email"
+                class="input"
+                name="profile_email"
+                id="profile_email"
+                required
+              />
+            </div>
+            <div class="input_wrapper select_wrapper">
+              <label for="account_country" class="label">Country</label>
+              <select
+                name="account_country"
+                id="account_country"
+                class="select"
+                
+              >
+                <option value=" "  selected hidden disabled>&nbsp Select</option>
+                <option value="China">&nbsp China</option>
+                <option value="Ukraine">&nbsp Ukraine</option>
+                <option value="Peru"> &nbsp Peru</option>
+              </select>
+            </div>
+            <div class="input_wrapper">
+              <label for="account_city" class="label">City</label>
+              <input
+                type="text"
+                class="input"
+                name="account_city"
+                id="account_city"
+                required
+              />
+            </div>
+            <div class="input_wrapper">
+              <label for="profile_zipcode" class="label">Zip Code</label>
+              <input
+                type="number"
+                class="input"
+                name="profile_zipcode"
+                id="profile_zipcode"
+                required
+              />
+            </div>
+            <div class="input_wrapper">
+              <label for="profile_phone" class="label">Phone Number
+              </label>
+              <input
+                type="number"
+                class="input"
+                name="profile_phone"
+                id="profile_phone"
+                required
+              />
+            </div>
+            <button type="submit" class="button update_button">Update</button>
+          </form>
+        </div>
+      </div></div>
+    </section>
+  </body>
+</html>
