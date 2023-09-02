@@ -1,0 +1,145 @@
+.container {
+  max-width: 1170px;
+  width: 95%;
+  margin: 0 auto;
+}
+.header {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e5eaf4;
+}
+
+.logo {
+  height: 30px;
+  width: 30px;
+  margin-right: 13px;
+}
+.logo_text {
+  color: #16133d;
+  font-family: "Quicksand";
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 35px;
+  display: inline;
+}
+.experience {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.heading_description {
+  color: #7690a8;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.section_heading {
+  color: #16133d;
+  font-family: "Nunito Sans";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 52px;
+  letter-spacing: 0.2px;
+  margin-bottom: 40px;
+}
+.experience_list {
+  display: flex;
+  gap: 30px;
+}
+.experience_item {
+  width: 370px;
+  height: 340px;
+  border-radius: 8px;
+  border: 1px solid #e5eaf4;
+  padding: 40px;
+  transition: all 0.3s ease;
+}
+.experience_hover_svg {
+  display: none;
+}
+.experience_item:hover {
+  border: 1px solid #3db370;
+}
+.experience_item:hover .experience_svg {
+  display: none;
+}
+.experience_item:hover .experience_hover_svg {
+  display: inline-block;
+}
+.svg_wrapper {
+  width: 64px;
+  height: 64px;
+  border: 1px solid rgba(209, 231, 255, 1);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.experience_svg,
+.experience_hover_svg {
+  max-width: 39px;
+  max-height: 36px;
+  transition: all 0.3s ease;
+}
+.list_heading {
+  color: #16133d;
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 21.28px;
+  letter-spacing: 0.2px;
+  margin-bottom: 15px;
+}
+.list_description {
+  color: #16133d;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 30px;
+}
+.list_link {
+  color: #3db370;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+}
+.footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: rgba(22, 19, 61, 1);
+}
+.footer .logo_text {
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 40px;
+}
+.socials_list {
+  display: flex;
+  gap: 10px;
+  margin-top: 40px;
+}
+.social_link {
+  display: inline-block;
+  height: 38px;
+  width: 38px;
+  border-radius: 5px;
+  background: #efeef3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.socials_svg {
+  max-width: 20px;
+  max-height: 20px;
+  fill: rgba(13, 13, 13, 1);
+}
+.social_link:hover .socials_svg {
+  fill: rgba(61, 179, 112, 1);
+}
